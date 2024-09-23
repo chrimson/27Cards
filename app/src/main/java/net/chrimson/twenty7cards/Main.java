@@ -14,7 +14,6 @@ public class Main {
     for (int suit = 0; suit < 4; suit++) {
       for (int rank = 0; rank < 13; rank++) {
         deck.add(new Card(suits[suit], ranks[rank]));
-//        System.out.printf("%2s %s\n", ranks[rank], suits[suit]);
       }
     }
 
@@ -23,8 +22,6 @@ public class Main {
       for (int yCols = 0; yCols < 3; yCols++) {
         for (int zCols = 0; zCols < 3; zCols++) {
           cardCols[xCols][yCols][zCols] = deck.remove((int)(Math.random() * deck.size()));
-//          System.out.printf("%s %s %s - ", xCols, yCols, zCols);
-//          System.out.printf("%2s %s\n", cardCols[xCols][yCols][zCols].rank, cardCols[xCols][yCols][zCols].suit);
         }
       }
     }
@@ -35,7 +32,8 @@ public class Main {
       System.out.printf("%2d: ", xCols);
       for (int yCols = 0; yCols < 3; yCols++) {
         for (int zCols = 0; zCols < 3; zCols++) {
-          System.out.printf("%2s %s  ", cardCols[xCols][yCols][zCols].rank, cardCols[xCols][yCols][zCols].suit);
+          Card listCard = cardCols[xCols][yCols][zCols];
+          System.out.printf("%2s %s  ", listCard.rank, listCard.suit);
         }
       }
       System.out.print("\n");
@@ -49,7 +47,8 @@ public class Main {
       System.out.printf("%2d: ", yCols);
       for (int zCols = 0; zCols < 3; zCols++) {
         for (int xCols = 0; xCols < 3; xCols++) {
-          System.out.printf("%2s %s  ", cardCols[xCols][yCols][zCols].rank, cardCols[xCols][yCols][zCols].suit);
+          Card listCard = cardCols[xCols][yCols][zCols];
+          System.out.printf("%2s %s  ", listCard.rank, listCard.suit);
         }
       }
       System.out.print("\n");
@@ -63,7 +62,8 @@ public class Main {
       System.out.printf("%2d: ", zCols);
       for (int xCols = 0; xCols < 3; xCols++) {
         for (int yCols = 0; yCols < 3; yCols++) {
-          System.out.printf("%2s %s  ", cardCols[xCols][yCols][zCols].rank, cardCols[xCols][yCols][zCols].suit);
+          Card listCard = cardCols[xCols][yCols][zCols];
+          System.out.printf("%2s %s  ", listCard.rank, listCard.suit);
         }
       }
       System.out.print("\n");
