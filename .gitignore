@@ -1,5 +1,6 @@
 *.apk
 *.iml
+*.class
 .gradle
 /.idea/caches
 /.idea/libraries
