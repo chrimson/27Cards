@@ -3,13 +3,13 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-    Scanner         input    = new Scanner(System.in);
-    int[]           myCols   = new int[3];
-    String[]        suits    = { "C", "D", "H", "S" };
-    String[]        ranks    = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A" };
-    ArrayList<Card> deck     = new ArrayList<Card>();
-    Card[][][]      cards = new Card[3][3][3];
-    int[]           plan  = new int[3];
+    Scanner         input  = new Scanner(System.in);
+    int[]           myCols = new int[3];
+    String[]        suits  = { "C", "D", "H", "S" };
+    String[]        ranks  = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A" };
+    ArrayList<Card> deck   = new ArrayList<Card>();
+    Card[][][]      cards  = new Card[3][3][3];
+    int[]           plan   = new int[3];
     ArrayList<Card> column = new ArrayList<Card>();
 
     // Construct a deck
