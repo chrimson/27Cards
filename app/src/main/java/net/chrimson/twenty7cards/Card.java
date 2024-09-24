@@ -1,4 +1,6 @@
-class Card {
+package net.chrimson.twenty7cards;
+
+public class Card {
   String suit;
   String rank;
 
