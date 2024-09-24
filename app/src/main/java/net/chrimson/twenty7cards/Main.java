@@ -9,6 +9,7 @@ public class Main {
     String[]        ranks    = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A" };
     ArrayList<Card> deck     = new ArrayList<Card>();
     Card[][][]      cardCols = new Card[3][3][3];
+    int[]           colPlan  = new int[3];
 
     // Construct a deck
     for (int suit = 0; suit < 4; suit++) {
@@ -18,21 +19,21 @@ public class Main {
     }
 
     // Choose 27 for the game, assigning columns for each round
-    for (int xCols = 0; xCols < 3; xCols++) {
-      for (int yCols = 0; yCols < 3; yCols++) {
-        for (int zCols = 0; zCols < 3; zCols++) {
-          cardCols[xCols][yCols][zCols] = deck.remove((int)(Math.random() * deck.size()));
+    for (colPlan[0] = 0; colPlan[0] < 3; colPlan[0]++) {
+      for (colPlan[1] = 0; colPlan[1] < 3; colPlan[1]++) {
+        for (colPlan[2] = 0; colPlan[2] < 3; colPlan[2]++) {
+          cardCols[colPlan[0]][colPlan[1]][colPlan[2]] = deck.remove((int)(Math.random() * deck.size()));
         }
       }
     }
 
     // Round 1 of 3, place cards in respective columns
     System.out.print("\n");
-    for (int xCols = 0; xCols < 3; xCols++) {
-      System.out.printf("%2d: ", xCols);
-      for (int yCols = 0; yCols < 3; yCols++) {
-        for (int zCols = 0; zCols < 3; zCols++) {
-          Card listCard = cardCols[xCols][yCols][zCols];
+    for (colPlan[0] = 0; colPlan[0] < 3; colPlan[0]++) {
+      System.out.printf("%2d: ", colPlan[0]);
+      for (colPlan[1] = 0; colPlan[1] < 3; colPlan[1]++) {
+        for (colPlan[2] = 0; colPlan[2] < 3; colPlan[2]++) {
+          Card listCard = cardCols[colPlan[0]][colPlan[1]][colPlan[2]];
           System.out.printf("%2s %s  ", listCard.rank, listCard.suit);
         }
       }
@@ -43,11 +44,11 @@ public class Main {
 
     // Round 2 of 3, place cards in respective columns
     System.out.print("\n");
-    for (int yCols = 0; yCols < 3; yCols++) {
-      System.out.printf("%2d: ", yCols);
-      for (int zCols = 0; zCols < 3; zCols++) {
-        for (int xCols = 0; xCols < 3; xCols++) {
-          Card listCard = cardCols[xCols][yCols][zCols];
+    for (colPlan[1] = 0; colPlan[1] < 3; colPlan[1]++) {
+      System.out.printf("%2d: ", colPlan[1]);
+      for (colPlan[2] = 0; colPlan[2] < 3; colPlan[2]++) {
+        for (colPlan[0] = 0; colPlan[0] < 3; colPlan[0]++) {
+          Card listCard = cardCols[colPlan[0]][colPlan[1]][colPlan[2]];
           System.out.printf("%2s %s  ", listCard.rank, listCard.suit);
         }
       }
@@ -58,11 +59,11 @@ public class Main {
 
     // Round 3 of 3, place cards in respective columns
     System.out.print("\n");
-    for (int zCols = 0; zCols < 3; zCols++) {
-      System.out.printf("%2d: ", zCols);
-      for (int xCols = 0; xCols < 3; xCols++) {
-        for (int yCols = 0; yCols < 3; yCols++) {
-          Card listCard = cardCols[xCols][yCols][zCols];
+    for (colPlan[2] = 0; colPlan[2] < 3; colPlan[2]++) {
+      System.out.printf("%2d: ", colPlan[2]);
+      for (colPlan[0] = 0; colPlan[0] < 3; colPlan[0]++) {
+        for (colPlan[1] = 0; colPlan[1] < 3; colPlan[1]++) {
+          Card listCard = cardCols[colPlan[0]][colPlan[1]][colPlan[2]];
           System.out.printf("%2s %s  ", listCard.rank, listCard.suit);
         }
       }
