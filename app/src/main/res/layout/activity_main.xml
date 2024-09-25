@@ -5,50 +5,61 @@
     android:layout_height="match_parent"
     android:stretchColumns="0,1,2">
 
-    <TableRow android:layout_weight="1">
-        <TextView android:id="@+id/c00"/>
-        <TextView android:id="@+id/c10"/>
-        <TextView android:id="@+id/c20"/>
+    <TableRow android:gravity="center_vertical" android:layout_weight="1">
+        <TextView android:textAlignment="center" android:id="@+id/c00"/>
+        <TextView android:textAlignment="center" android:id="@+id/c10"/>
+        <TextView android:textAlignment="center" android:id="@+id/c20"/>
     </TableRow>
-    <TableRow android:layout_weight="1">
-        <TextView android:id="@+id/c01"/>
-        <TextView android:id="@+id/c11"/>
-        <TextView android:id="@+id/c21"/>
+    <TableRow android:gravity="center_vertical" android:layout_weight="1">
+        <TextView android:textAlignment="center" android:id="@+id/c01"/>
+        <TextView android:textAlignment="center" android:id="@+id/c11"/>
+        <TextView android:textAlignment="center" android:id="@+id/c21"/>
     </TableRow>
-    <TableRow android:layout_weight="1">
-        <TextView android:id="@+id/c02"/>
-        <TextView android:id="@+id/c12"/>
-        <TextView android:id="@+id/c22"/>
+    <TableRow android:gravity="center_vertical" android:layout_weight="1">
+        <TextView android:textAlignment="center" android:id="@+id/c02"/>
+        <TextView android:textAlignment="center" android:id="@+id/c12"/>
+        <TextView android:textAlignment="center" android:id="@+id/c22"/>
     </TableRow>
-    <TableRow android:layout_weight="1">
-        <TextView android:id="@+id/c03"/>
-        <TextView android:id="@+id/c13"/>
-        <TextView android:id="@+id/c23"/>
+
+    <TableRow android:gravity="center_vertical" android:layout_weight="1">
+        <TextView android:textAlignment="center" android:id="@+id/c03"/>
+        <TextView android:textAlignment="center" android:id="@+id/c13"/>
+        <TextView android:textAlignment="center" android:id="@+id/c23"/>
     </TableRow>
-    <TableRow android:layout_weight="1">
-        <TextView android:id="@+id/c04"/>
-        <TextView android:id="@+id/c14"/>
-        <TextView android:id="@+id/c24"/>
+    <TableRow android:gravity="center_vertical" android:layout_weight="1">
+        <TextView android:textAlignment="center" android:id="@+id/c04"/>
+        <TextView android:textAlignment="center" android:id="@+id/c14"/>
+        <TextView android:textAlignment="center" android:id="@+id/c24"/>
     </TableRow>
-    <TableRow android:layout_weight="1">
-        <TextView android:id="@+id/c05"/>
-        <TextView android:id="@+id/c15"/>
-        <TextView android:id="@+id/c25"/>
+    <TableRow android:gravity="center_vertical" android:layout_weight="1">
+        <TextView android:textAlignment="center" android:id="@+id/c05"/>
+        <TextView android:textAlignment="center" android:id="@+id/c15"/>
+        <TextView android:textAlignment="center" android:id="@+id/c25"/>
     </TableRow>
-    <TableRow android:layout_weight="1">
-        <TextView android:id="@+id/c06"/>
-        <TextView android:id="@+id/c16"/>
-        <TextView android:id="@+id/c26"/>
+
+    <TableRow android:gravity="center_vertical" android:layout_weight="1">
+        <TextView android:textAlignment="center" android:id="@+id/c06"/>
+        <TextView android:textAlignment="center" android:id="@+id/c16"/>
+        <TextView android:textAlignment="center" android:id="@+id/c26"/>
     </TableRow>
-    <TableRow android:layout_weight="1">
-        <TextView android:id="@+id/c07"/>
-        <TextView android:id="@+id/c17"/>
-        <TextView android:id="@+id/c27"/>
+    <TableRow android:gravity="center_vertical" android:layout_weight="1">
+        <TextView android:textAlignment="center" android:id="@+id/c07"/>
+        <TextView android:textAlignment="center" android:id="@+id/c17"/>
+        <TextView android:textAlignment="center" android:id="@+id/c27"/>
     </TableRow>
-    <TableRow android:layout_weight="1">
-        <TextView android:id="@+id/c08"/>
-        <TextView android:id="@+id/c18"/>
-        <TextView android:id="@+id/c28"/>
+    <TableRow android:gravity="center_vertical" android:layout_weight="1">
+        <TextView android:textAlignment="center" android:id="@+id/c08"/>
+        <TextView android:textAlignment="center" android:id="@+id/c18"/>
+        <TextView android:textAlignment="center" android:id="@+id/c28"/>
+    </TableRow>
+
+    <TableRow android:id="@+id/colBtns">
+        <Button android:id="@+id/b0"/>
+        <Button android:id="@+id/b1"/>
+        <Button android:id="@+id/b2"/>
+    </TableRow>
+    <TableRow android:id="@+id/rst">
+        <Button android:layout_span="3" android:id="@+id/rstBtn"/>
     </TableRow>
 
 </TableLayout>
