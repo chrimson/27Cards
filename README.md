@@ -21,7 +21,5 @@ image size, order
 
 publish
 
-![](misc/Screenshot_20240924-233224.png)
-![](misc/Screenshot_20240924-233212.png)
-![](misc/Screenshot_20240924-233142.png)
-![](misc/Screenshot_20240924-233128.png)
+![](misc/27Cards_a.jpg)
+![](misc/27Cards_b.jpg)
