@@ -51,11 +51,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
 
+        // Enable only column buttons
         findViewById(R.id.rst).setVisibility(View.GONE);
         findViewById(R.id.colBtns).setVisibility(View.VISIBLE);
 
-        round = 0;
         // For round 0, list cards in their columns, then select which column
+        round = 0;
         displayCards();
     }
 
@@ -80,8 +81,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 String id = "c" + String.valueOf(plan[l]) + String.valueOf(row);
                 int cardId = getResources().getIdentifier(id, "id", getPackageName());
                 TextView cardPlace = findViewById(cardId);
-                cardPlace.setTextSize(32);
                 cardPlace.setTypeface(null, Typeface.BOLD);
+                cardPlace.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                cardPlace.setTextSize(32);
                 cardPlace.setTextColor(card.color);
                 cardPlace.setText(String.format("%2s %s", card.rank, card.suit));
             }
@@ -115,6 +117,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             // Select user's card
             Card myCard = cards[myCols[0]][myCols[1]][myCols[2]];
 
+            // Clear all cards
             for (int col = 0; col < 3; col++) {
                 for (int row = 0; row < 9; row++) {
                     String id = "c" + String.valueOf(col) + String.valueOf(row);
@@ -123,11 +126,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     cardPlace.setText("");
                 }
             }
+
+            // Only show my card
             TextView cardPlace = findViewById(R.id.c14);
             cardPlace.setTextSize(96);
             cardPlace.setTextColor(myCard.color);
             cardPlace.setText(String.format("%2s %s", myCard.rank, myCard.suit));
 
+            // Switch to reset button
             findViewById(R.id.colBtns).setVisibility(View.GONE);
             findViewById(R.id.rst).setVisibility(View.VISIBLE);
         }
