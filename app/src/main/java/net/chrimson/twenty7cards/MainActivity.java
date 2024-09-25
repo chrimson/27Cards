@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 TextView cardPlace = findViewById(cardId);
                 cardPlace.setTypeface(null, Typeface.BOLD);
                 cardPlace.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                cardPlace.setBackgroundColor(Color.WHITE);
                 cardPlace.setTextSize(32);
                 cardPlace.setTextColor(card.color);
                 cardPlace.setText(String.format("%2s %s", card.rank, card.suit));
@@ -123,13 +124,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     String id = "c" + String.valueOf(col) + String.valueOf(row);
                     int cardId = getResources().getIdentifier(id, "id", getPackageName());
                     TextView cardPlace = findViewById(cardId);
+                    cardPlace.setBackgroundColor(Color.parseColor("#007f00"));
                     cardPlace.setText("");
                 }
             }
 
             // Only show my card
             TextView cardPlace = findViewById(R.id.c14);
-            cardPlace.setTextSize(96);
+            cardPlace.setBackgroundColor(Color.WHITE);
+            cardPlace.setTextSize(80);
             cardPlace.setTextColor(myCard.color);
             cardPlace.setText(String.format("%2s %s", myCard.rank, myCard.suit));
 
