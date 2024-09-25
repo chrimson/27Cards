@@ -12,3 +12,8 @@ Each time, mix the order so their rows aren't laid out in a pattern
 And each time, prompt for which column
 
 Return the card whose 3-digit plan matches to the chosen columns
+
+![](misc/Screenshot_20240924-233224.png)
+![](misc/Screenshot_20240924-233212.png)
+![](misc/Screenshot_20240924-233142.png)
+![](misc/Screenshot_20240924-233128.png)
