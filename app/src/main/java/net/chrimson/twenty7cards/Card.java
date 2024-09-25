@@ -12,7 +12,7 @@ public class Card {
     rank = r;
 
     if (suit == "♣" || suit == "♠") {
-      color = Color.BLACK;
+      color = Color.parseColor("#7f7f7f");
     }
 
     if (suit == "♦" || suit == "♥") {
