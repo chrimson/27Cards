@@ -1,6 +1,9 @@
 package net.chrimson.twenty7cards;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -9,7 +12,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     ArrayList<Card> deck   = null;
     int[]           myCols = new int[3];
-    String[]        suits  = { "C", "D", "H", "S" };
+    String[]        suits  = { "♣", "♦", "♥", "♠" };
     String[]        ranks  = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A" };
     Card[][][]      cards  = new Card[3][3][3];
     int[]           plan   = new int[3];
@@ -77,6 +80,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 String id = "c" + String.valueOf(plan[l]) + String.valueOf(row);
                 int cardId = getResources().getIdentifier(id, "id", getPackageName());
                 TextView cardPlace = findViewById(cardId);
+                cardPlace.setTextSize(32);
+                cardPlace.setTypeface(null, Typeface.BOLD);
+                cardPlace.setTextColor(card.color);
                 cardPlace.setText(String.format("%2s %s", card.rank, card.suit));
             }
         }
@@ -118,6 +124,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
             }
             TextView cardPlace = findViewById(R.id.c14);
+            cardPlace.setTextSize(96);
+            cardPlace.setTextColor(myCard.color);
             cardPlace.setText(String.format("%2s %s", myCard.rank, myCard.suit));
 
             findViewById(R.id.colBtns).setVisibility(View.GONE);

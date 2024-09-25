@@ -2,6 +2,7 @@
 *.iml
 *.class
 .gradle
+/.idea
 /.idea/shelf
 /.idea/caches
 /.idea/libraries
