@@ -13,6 +13,18 @@ And each time, prompt for which column
 
 Return the card whose 3-digit plan matches to the chosen columns
 
+### To Do
+
+black color
+
+activity_layout
+
+icon
+
+image size
+
+publish
+
 ![](misc/Screenshot_20240924-233224.png)
 ![](misc/Screenshot_20240924-233212.png)
 ![](misc/Screenshot_20240924-233142.png)
