@@ -23,7 +23,7 @@ borders
 
 icon
 
-image size
+image size, order
 
 publish
 
