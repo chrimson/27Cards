@@ -17,7 +17,9 @@ Return the card whose 3-digit plan matches to the chosen columns
 
 black color
 
-activity_layout
+width of 10-cards
+
+borders
 
 icon
 
