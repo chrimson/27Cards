@@ -33,7 +33,7 @@ And each time, prompt for which column
 
 Return the card whose 3-digit plan matches to the chosen columns
 
-### To Do
+## To Do
 
 publish
 
