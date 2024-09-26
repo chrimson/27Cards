@@ -1,3 +1,8 @@
+/*
+Original 27Cards CLI Java code
+Chris Limson
+*/
+
 import java.util.ArrayList;
 import java.util.Scanner;
 

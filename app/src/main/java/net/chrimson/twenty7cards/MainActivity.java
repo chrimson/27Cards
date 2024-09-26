@@ -1,3 +1,9 @@
+/*
+27Cards
+Android Java
+Chris Limson
+*/
+
 package net.chrimson.twenty7cards;
 
 import androidx.appcompat.app.AppCompatActivity;
