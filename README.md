@@ -5,7 +5,7 @@
 
 In the original classic, the magician lays out three columns of seven cards each, face up, for a total of 21
 
-He'll ask the volunteer to look and choose a card in her mind. He'll ask her to tell him only which column the card is in
+He'll ask the volunteer to look and choose a card in her mind, and tell him only which column the card is in
 
 The magician will collect the 21 cards, shuffle, and lay them out again like before
 
