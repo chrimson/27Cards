@@ -1,5 +1,5 @@
 /*
-Original CLI Java code
+Original 27Cards CLI Java code
 Chris Limson
 */
 
